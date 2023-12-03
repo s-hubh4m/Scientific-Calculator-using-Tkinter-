@@ -21,7 +21,7 @@ buttons = [
     ('1', 8, 0), ('2', 8, 1), ('3', 8, 2), ('+', 8, 3),
     ('+/-', 9, 0), ('0', 9, 1), ('.', 9, 2), ('=', 9, 3)
 ]
-#
+
 for (text, row, col) in buttons:
     button = tk.Button(root, text=text, padx=20, pady=10, font=("Italic", 5, 'bold'),fg = 'white', bg = 'black' , command= lambda t=text: on_button_click(t))
     button.grid(row=row, column=col, sticky="nsew")
